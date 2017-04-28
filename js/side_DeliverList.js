@@ -41,7 +41,7 @@ function addTablePage() {
     $("#deliverList_table tr:not(:first)").remove();
     num = 1;
     if(order_len)
-        $('#deliverList_page').append('<div id="exPage" onclick="exPage()" style="margin-right: 20px; display: inline-block; cursor: pointer">이전</div>');
+        $('#deliverList_page').append('<div id="exPage" onclick="exPage()" style="margin-right: 20px; display: inline-block; cursor: pointer">Pre</div>');
     for(var i=1; i<=(order_len/20)+1 ; i++){
         $('#deliverList_page').append('<div id="page'+i+'" style="margin-right: 5px; display: inline-block; cursor: pointer" onclick="addTableRow('+i+')">'+i+'</div>');
         if(1<=i && i<=10){
@@ -51,7 +51,7 @@ function addTablePage() {
         }
     }
     document.getElementById('page1').style.color = "#f25a45";
-    $('#deliverList_page').append('<div id="nextPage" onclick="nextPage()" style="margin-left: 20px; display: inline-block; cursor: pointer">다음</div>');
+    $('#deliverList_page').append('<div id="nextPage" onclick="nextPage()" style="margin-left: 20px; display: inline-block; cursor: pointer">Next</div>');
     for(var j = 1 ; j <= 20 ; j++ ){
         var service = new Array();
         service = checkService(j);

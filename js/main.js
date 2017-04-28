@@ -97,7 +97,7 @@ function admin_addTablePage() {
     $("#main_notadmin tr:not(:first)").remove();
     admin_num = 1;
     if(admin_len != 0)
-        $('#notadmin_page').append('<div id="exPage" onclick="admin_exPage()" style="margin-right: 20px; display: inline-block; cursor: pointer">이전</div>');
+        $('#notadmin_page').append('<div id="exPage" onclick="admin_exPage()" style="margin-right: 20px; display: inline-block; cursor: pointer">Pre</div>');
     for(var i=1; i<=(admin_len/20)+1 ; i++){
         $('#notadmin_page').append('<div id="page'+i+'" style="margin-right: 5px; display: inline-block; cursor: pointer" onclick="admin_addTableRow('+i+')">'+i+'</div>');
         if(1<=i && i<=10){
@@ -107,7 +107,7 @@ function admin_addTablePage() {
         }
     }
     document.getElementById('page1').style.color = "#f25a45";
-    $('#notadmin_page').append('<div id="nextPage" onclick="admin_nextPage()" style="margin-left: 20px; display: inline-block; cursor: pointer">다음</div>');
+    $('#notadmin_page').append('<div id="nextPage" onclick="admin_nextPage()" style="margin-left: 20px; display: inline-block; cursor: pointer">Next</div>');
     for(var j = 1 ; j <= 20 ; j++ ){
 
         if(Admin[j].state === "0"){
@@ -215,7 +215,7 @@ function book_addTablePage() {
     $("#reserve_schedule tr:not(:first)").remove();
     book_num = 1;
     if(admin_len != 0)
-        $('#main_reserve_page').append('<div id="book_exPage" onclick="book_exPage()" style="margin-right: 20px; display: inline-block; cursor: pointer">이전</div>');
+        $('#main_reserve_page').append('<div id="book_exPage" onclick="book_exPage()" style="margin-right: 20px; display: inline-block; cursor: pointer">Pre</div>');
     for(var i=1; i<=(admin_len/20)+1 ; i++){
         $('#main_reserve_page').append('<div id="book_page'+i+'" style="margin-right: 5px; display: inline-block; cursor: pointer" onclick="book_addTableRow('+i+')">'+i+'</div>');
         if(1<=i && i<=10){
@@ -225,7 +225,7 @@ function book_addTablePage() {
         }
     }
     document.getElementById('book_page1').style.color = "#f25a45";
-    $('#main_reserve_page').append('<div id="book_nextPage" onclick="book_nextPage()" style="margin-left: 20px; display: inline-block; cursor: pointer">다음</div>');
+    $('#main_reserve_page').append('<div id="book_nextPage" onclick="book_nextPage()" style="margin-left: 20px; display: inline-block; cursor: pointer">Next</div>');
     for(var j = 1 ; j <= 20 ; j++ ){
 
         if(Book[j].state === "0"){
