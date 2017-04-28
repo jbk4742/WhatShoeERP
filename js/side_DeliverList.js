@@ -253,7 +253,7 @@ $('#deliver_first_btn').click(function () {
 
 //주문modal에서 정보변경
 $('#deliverList_modal_save').click(function () {
-    var id = document.getElementById('deliverList_modal_id').textContent;
+    var id = document.getElementById('deliverList_modal_index').textContent;
     var deliver = document.getElementById('deliverList_modal_deliver').value;
     var delivery_company = document.getElementById('deliverList_modal_deliver').value;
     if(deliver && delivery_company){
