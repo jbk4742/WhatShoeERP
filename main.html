@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="side_title">Goods Management</a>
+    <a href="side_sellService.html" class="side_subtitle">- View sales service</a>
+    <a href="#" class="side_title">Settlement history</a>
+    <a href="side_sellState.html" class="side_subtitle">- Sales / Settlement Status</a><!----------삭제------->
+    <a href="#" class="side_title">Sales confirmation</a>
+    <a href="side_orderList.html" class="side_subtitle">- Order Completed</a>
+    <a href="side_deliver_req.html" class="side_subtitle">- Dispatch request</a>
+    <a href="side_cancel_req.html" class="side_subtitle">- Cancellation history</a><!----------삭제------->
+    <a href="#" class="side_title">Delayed goods</a>
+    <a href="side_delay_send.html" class="side_subtitle">- Delayed Shipments</a>
+    <a href="side_not_arrive.html" class="side_subtitle">- No arrival</a>
+    <a class="side_title">CS center</a>
+    <div class="sidenav-icon">e-mail</div>
+    <div class="sidenav-icon">kakao</div>
+    <div class="sidenav-icon">call</div>
+</div>
+
+<div id="main">
+    <div id="main_head">
+        <img id="main_img" src="images/main_title.png" style="width: 100px; height: 50px"/>
+    </div>
+    <div class="main_body">
+
+
+        <div class="main_body_row">
+          <h3>* Number of unspecified persons</h3>
+        </div>
+
+        <div class="main_body_row">
+            <table id="main_notadmin" border="1" style="border-collapse: collapse" bordercolor="#000000">
+                <thead>
+                    <tr><th>Order Number</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Manager</th>
+                        <th>Order Status</th>
+                        <th>Booking</th></tr>
+                </thead>
+                <tbody id="notadmin_body">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="main_body_row">
+            <div id="notadmin_page"></div>
+        </div>
+        <div class="main_body_row">
+            <h3>* Reservation Schedule Management</h3>
+        </div>
+
+        <div class="main_body_row">
+            <table id="reserve_schedule" border="1" style="border-collapse: collapse" bordercolor="#000000">
+                <thead>
+                    <tr><th>Order Number</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Manager</th>
+                        <th>Order Status</th>
+                        <th>Booking</th></tr>
+                </thead>
+                <tbody id="reserve_body">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="main_body_row">
+            <div id="main_reserve_page"></div>
+        </div>
+
+        <div class="main_body_row">
+            <h3>* Order Statistics</h3>
+        </div>
+        <div class="main_body_row">
+            <table id="order_stats" style="text-align: center">
+                <tbody>
+                    <tr style="height: 40px"><td>Number of orders / Number of buyers</td><td><span id="order_count">0 count / 0 person</span></td></tr>
+                    <tr style="height: 40px"><td>Total price of order</td><td><span id="main_sum_price">0$</span></td></tr>
+                    <tr style="height: 40px"><td>New / Old Number of customers</td><td><span id="main_new_old">0 count / 0 count</span></td></tr>
+                    <tr style="height: 40px"><td>Customer price</td><td><span id="main_avr">0$</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/order_Info.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<preman xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>300</code>
+		<price>0</price>
+		<content>Chat with an agent</content>
+	</service>
+	<service>
+		<code>301</code>
+		<price>20</price>
+		<content>Premium shoe care</content>
+	</service>
+	<service>
+		<code>302</code>
+		<price>30</price>
+		<content>Premium shoe deep care</content>
+	</service>
+	<service>
+		<code>303</code>
+		<price>40</price>
+		<content>Vibram top lift replacement</content>
+	</service>
+	<service>
+		<code>304</code>
+		<price>40</price>
+		<content>vibram half sole replacement</content>
+	</service>
+	<service>
+		<code>305</code>
+		<price>30</price>
+		<content>Outsole repair</content>
+	</service>
+	<service>
+		<code>306</code>
+		<price>60</price>
+		<content>Premium sole replacement + shoe care</content>
+	</service>
+	<service>
+		<code>307</code>
+		<price>158</price>
+		<content>Vibram sole replacement</content>
+	</service>
+	<service>
+		<code>308</code>
+		<price>35</price>
+		<content>Premium toe cap dye</content>
+	</service>
+	<service>
+		<code>309</code>
+		<price>110</price>
+		<content>Premium toe cap refor</content>
+	</service>
+	<service>
+		<code>310</code>
+		<price>130</price>
+		<content>dye</content>
+	</service>
+	<service>
+		<code>311</code>
+		<price>35</price>
+		<content>shoe size adjustment</content>
+	</service>
+	<service>
+		<code>312</code>
+		<price>30</price>
+		<content>Shoe insert replacement</content>
+	</service>
+	<service>
+		<code>313</code>
+		<price>4</price>
+		<content>Free delivery of men socks</content>
+	</service>
+	<service>
+		<code>314</code>
+		<price>0</price>
+		<content>Free delivery of tobacco</content>
+	</service>
+	<service>
+		<code>315</code>
+		<price>0.1</price>
+		<content>Free delivery of lighter</content>
+	</service>
+</preman>

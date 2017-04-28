@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>미도착</title>
+    <link type="text/css" rel="stylesheet" href="css/side_not_arrive.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="side_title">Goods Management</a>
+    <a href="side_sellService.html" class="side_subtitle">- View sales service</a>
+    <a href="#" class="side_title">Settlement history</a>
+    <a href="side_sellState.html" class="side_subtitle">- Sales / Settlement Status</a><!----------삭제------->
+    <a href="#" class="side_title">Sales confirmation</a>
+    <a href="side_orderList.html" class="side_subtitle">- Order Completed</a>
+    <a href="side_deliver_req.html" class="side_subtitle">- Dispatch request</a>
+    <a href="side_cancel_req.html" class="side_subtitle">- Cancellation history</a><!----------삭제------->
+    <a href="#" class="side_title">Delayed goods</a>
+    <a href="side_delay_send.html" class="side_subtitle">- Delayed Shipments</a>
+    <a href="side_not_arrive.html" class="side_subtitle">- No arrival</a>
+    <a class="side_title">CS center</a>
+    <div class="sidenav-icon">e-mail</div>
+    <div class="sidenav-icon">kakao</div>
+    <div class="sidenav-icon">call</div>
+</div>
+<div id="not_arrive">
+    <div id="not_arrive_head">
+        <img id="main_img" src="images/main_title.png" style="width: 100px; height: 50px"/>
+    </div>
+    <div id="not_arrive_body">
+        <div class="not_arrive_row">
+            <h2>No arrival</h2>
+        </div>
+        <div class="not_arrive_row">
+            <table id="not_arrive_list">
+                <tr><td>No arrival : <span id="not_arrive_count">0건</span> </td></tr>
+            </table>
+        </div>
+        <div class="not_arrive_row">
+            <table id="not_arrive_table" border="1" style="border-collapse: collapse" bordercolor="#000000">
+                <thead>
+                <tr><th>NUM</th>
+                    <th>ID</th>
+                    <th>SERVICE</th>
+                    <th>ADDRESS</th>
+                    <th>STATE</th>
+                    <th>MANAGER</th>
+                    <th>PHONE</th>
+                    <th>BOOK</th>
+                    <th>PAYMENT</th>
+                    <th>MEMO</th>
+                    <th>ORDER_TIME</th></tr>
+                </thead>
+                <tbody id="not_arrive_table_body">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="not_arrive_row">
+            <div id="not_arrive_page" style="text-align: center"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/order_Info.js"></script>
+<script type="text/javascript" src="js/side_notArrive.js"></script>
+<script type="text/javascript" src="js/xmlParse.js"></script>
+</body>
+</html>

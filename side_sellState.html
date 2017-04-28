@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/side_sellState.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="side_title">Goods Management</a>
+    <a href="side_sellService.html" class="side_subtitle">- View sales service</a>
+    <a href="#" class="side_title">Settlement history</a>
+    <a href="side_sellState.html" class="side_subtitle">- Sales / Settlement Status</a><!----------삭제------->
+    <a href="#" class="side_title">Sales confirmation</a>
+    <a href="side_orderList.html" class="side_subtitle">- Order Completed</a>
+    <a href="side_deliver_req.html" class="side_subtitle">- Dispatch request</a>
+    <a href="side_cancel_req.html" class="side_subtitle">- Cancellation history</a><!----------삭제------->
+    <a href="#" class="side_title">Delayed goods</a>
+    <a href="side_delay_send.html" class="side_subtitle">- Delayed Shipments</a>
+    <a href="side_not_arrive.html" class="side_subtitle">- No arrival</a>
+    <a class="side_title">CS center</a>
+    <div class="sidenav-icon">e-mail</div>
+    <div class="sidenav-icon">kakao</div>
+    <div class="sidenav-icon">call</div>
+</div>
+<div id="sellState">
+    <div id="sellState_head">
+        <img id="main_img" src="images/main_title.png" style="width: 100px; height: 50px"/>
+    </div>
+    <div id="sellState_body">
+        <div class="sellState_row">
+            <h2>판매/정산 현황</h2>
+        </div>
+        <div class="sellState_row">
+            <div id="sellState_text">
+                <div id="sell_date" style="display: inline-block; width: 100px">2017/04/19</div>
+                <div id="sell_content" style="display: inline-block; width: 1000px">정산 예정 금액은 얼마입니다(test)</div>
+            </div>
+        </div>
+        <div>
+            <h5>* 전일자 기준 확정된 정산 금액으로 실제 손금액과는 차이가 있을 수 있습니다.</h5>
+        </div>
+        <div class="sellState_row">
+            <table id="sellState_search">
+                <tr><td  style="width: 100px;"><label>구분</label></td>
+                <td colspan="3"><input type="radio" name="sellState_search_chk"><label>판매현황</label>
+                <input type="radio" name="sellState_search_chk"><label>정산보류 내역</label>
+                <input type="checkbox" id="sellState_notProcess"><label>미처리 정산 보류 내역 전체 보기</label></td>
+                <td rowspan="3"><div id="sellState_search_btn">검색</div>
+                <div id="sellState_first_btn">초기화</div></td></tr>
+
+                <tr><td  style="width: 100px;"><label>기간검색</label></td>
+                <td colspan="3"><input type="radio" name="sellState_search_date"><label>일별</label>
+                <input type="radio" name="sellState_search_date"><label>월별</label>
+                </td></tr>
+
+                <tr><td  style="width: 100px;"><label>주문상태</label></td>
+                <td><select id="sellState_orderState">
+                        <option value="전체">전체</option>
+                        <option value="주문완료">주문완료</option>
+                        <option value="결재완료">결제완료</option>
+                        <option value="배송중">배송중</option>
+                        <option value="배송완료">배송완료</option>
+                    </select></td>
+                <td style="width: 100px;">상세검색</td>
+                    <td><select id="sellState_moreInfo">
+                        <option value="전체">전체</option>
+                        <option value="주문완료">주문완료</option>
+                        <option value="결재완료">결제완료</option>
+                        <option value="배송중">배송중</option>
+                        <option value="배송완료">배송완료</option>
+                    </select>
+                    <input id="sellState_moreInfo_text"></td></tr>
+            </table>
+        </div>
+        <div class="sellState_row">
+            <h3>*판매정산 현황</h3>
+        </div>
+        <div>
+            <h5>-정산예정금액은 정산보류 금액과 미수금이 미반영된 금액으로 실제 손금금액과 차이가 있을 수 있습니다.</h5>
+        </div>
+        <div class="sellState_row">
+            <div style="width: 150px; background-color: black; color: white; text-align: center"><a id="cal_decide">정삭 확정건(0)</a></div>
+            <table id="cal_decide_info">
+                <thead><tr><th>판매금액(A)</th><th>공제금액(B)</th><th>정산예정금액(A-B)</th></tr></thead>
+                <tbody><tr><td><span>0</span></td>
+                <td><span>0</span></td>
+                <td><span>0</span></td></tr></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

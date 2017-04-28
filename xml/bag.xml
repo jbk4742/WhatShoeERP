@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bag xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>500</code>
+		<price>0</price>
+		<content>Chat with an agent</content>
+	</service>
+	<service>
+		<code>501</code>
+		<price>270</price>
+		<content>Dying and color matching</content>
+	</service>
+	<service>
+		<code>502</code>
+		<price>35</price>
+		<content>handle hardware replacement</content>
+	</service>
+	<service>
+		<code>503</code>
+		<price>25</price>
+		<content>handles stitching</content>
+	</service>
+	<service>
+		<code>504</code>
+		<price>45</price>
+		<content>refinishing and edging of existing handles</content>
+	</service>
+	<service>
+		<code>505</code>
+		<price>0</price>
+		<content>New handles</content>
+	</service>
+	<service>
+		<code>506</code>
+		<price>120</price>
+		<content>edge piping repair</content>
+	</service>
+	<service>
+		<code>507</code>
+		<price>30</price>
+		<content>zipper tap repair</content>
+	</service>
+	<service>
+		<code>508</code>
+		<price>90</price>
+		<content>zipper replacement</content>
+	</service>
+	<service>
+		<code>509</code>
+		<price>120</price>
+		<content>lining replacement</content>
+	</service>
+	<service>
+		<code>510</code>
+		<price>35</price>
+		<content>Edge leather replacement</content>
+	</service>
+	<service>
+		<code>511</code>
+		<price>35</price>
+		<content>add brass feet</content>
+	</service>
+</bag>

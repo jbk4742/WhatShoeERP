@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wallet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>700</code>
+		<price>0</price>
+		<content>Chat with an agent</content>
+	</service>
+	<service>
+		<code>701</code>
+		<price>55</price>
+		<content>wallet refinishing</content>
+	</service>
+	<service>
+		<code>702</code>
+		<price>30</price>
+		<content>wallet stitching</content>
+	</service>
+	<service>
+		<code>703</code>
+		<price>100</price>
+		<content>wallet body dyes</content>
+	</service>
+	<service>
+		<code>704</code>
+		<price>40</price>
+		<content>wallet cleaning</content>
+	</service>
+	<service>
+		<code>705</code>
+		<price>45</price>
+		<content>color restoration</content>
+	</service>
+	<service>
+		<code>706</code>
+		<price>100</price>
+		<content>lining replacement</content>
+	</service>
+	<service>
+		<code>707</code>
+		<price>50</price>
+		<content>lining zipper tab replacement</content>
+	</service>
+	<service>
+		<code>708</code>
+		<price>20</price>
+		<content>lining closure replacement</content>
+	</service>
+</wallet>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<woman xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>200</code>
+		<price>0</price>
+		<content>Chat with an agent</content>
+	</service>
+	<service>
+		<code>201</code>
+		<price>5</price>
+		<content>Shoe Polishing Services</content>
+	</service>
+	<service>
+		<code>202</code>
+		<price>5</price>
+		<content>Heel tip replacement(small)</content>
+	</service>
+	<service>
+		<code>203</code>
+		<price>7</price>
+		<content>Heel tip replacement(etc)</content>
+	</service>
+	<service>
+		<code>204</code>
+		<price>15</price>
+		<content>Half sole replacement</content>
+	</service>
+	<service>
+		<code>205</code>
+		<price>15</price>
+		<content>Heel replacement</content>
+	</service>
+	<service>
+		<code>206</code>
+		<price>15</price>
+		<content>Boots care</content>
+	</service>
+	<service>
+		<code>207</code>
+		<price>2</price>
+		<content>Sole replacement</content>
+	</service>
+	<service>
+		<code>208</code>
+		<price>15</price>
+		<content>Shoe insert replacement</content>
+	</service>
+	<service>
+		<code>209</code>
+		<price>4</price>
+		<content>Free delivery of stockings</content>
+	</service>
+	<service>
+		<code>210</code>
+		<price>0</price>
+		<content>Free delivery of band-Aid</content>
+	</service>
+	<service>
+		<code>211</code>
+		<price>0</price>
+		<content>Free delivery of tobacco</content>
+	</service>
+	<service>
+		<code>212</code>
+		<price>0.1</price>
+		<content>Free delivery of lighter</content>
+	</service>
+</woman>

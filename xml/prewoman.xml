@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prewoman xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>400</code>
+		<price>0</price>
+		<content>Chat with an agent</content>
+	</service>
+	<service>
+		<code>401</code>
+		<price>20</price>
+		<content>Premium shoe care</content>
+	</service>
+	<service>
+		<code>402</code>
+		<price>30</price>
+		<content>Premium deep shoe care</content>
+	</service>
+	<service>
+		<code>403</code>
+		<price>10</price>
+		<content>Premium heels tips replacement(small)</content>
+	</service>
+	<service>
+		<code>404</code>
+		<price>15</price>
+		<content>Premium heels tips replacement(medium)</content>
+	</service>
+	<service>
+		<code>405</code>
+		<price>20</price>
+		<content>Premium heels tips replacement(large)</content>
+	</service>
+	<service>
+		<code>406</code>
+		<price>30</price>
+		<content>Vibram half sole replacement</content>
+	</service>
+	<service>
+		<code>407</code>
+		<price>30</price>
+		<content>Premium heels replacement</content>
+	</service>
+	<service>
+		<code>408</code>
+		<price>30</price>
+		<content>Premium platform replacement</content>
+	</service>
+	<service>
+		<code>409</code>
+		<price>40</price>
+		<content>Premium heels leather replacement</content>
+	</service>
+	<service>
+		<code>410</code>
+		<price>35</price>
+		<content>Premium boots care(+shoe care)</content>
+	</service>
+	<service>
+		<code>411</code>
+		<price>35</price>
+		<content>Premium toe cap care</content>
+	</service>
+	<service>
+		<code>412</code>
+		<price>110</price>
+		<content>Premium toe cap refor</content>
+	</service>
+	<service>
+		<code>413</code>
+		<price>130</price>
+		<content>dye</content>
+	</service>
+	<service>
+		<code>414</code>
+		<price>20</price>
+		<content>Premium adjustment of the heels height</content>
+	</service>
+	<service>
+		<code>415</code>
+		<price>35</price>
+		<content>Premium shoe size adjustment</content>
+	</service>
+	<service>
+		<code>416</code>
+		<price>30</price>
+		<content>Shoe insert replacement</content>
+	</service>
+	<service>
+		<code>417</code>
+		<price>20</price>
+		<content>Increased Boots</content>
+	</service>
+	<service>
+		<code>418</code>
+		<price>85</price>
+		<content>Reduce Boots</content>
+	</service>
+	<service>
+		<code>419</code>
+		<price>130</price>
+		<content>Premium boots zipper replacement</content>
+	</service>
+	<service>
+		<code>420</code>
+		<price>25</price>
+		<content>Premium boots zipper tab replacement</content>
+	</service>
+	<service>
+		<code>421</code>
+		<price>4</price>
+		<content>Free delivery of stockings</content>
+	</service>
+	<service>
+		<code>421</code>
+		<price>0.1</price>
+		<content>Free delivery of tobacco</content>
+	</service>
+	<service>
+		<code>423</code>
+		<price>0</price>
+		<content>Free delivery of lighter</content>
+	</service>
+
+	<service>
+		<code>424</code>
+		<price>0</price>
+		<content>Free delivery of band-Aid</content>
+	</service></prewoman>

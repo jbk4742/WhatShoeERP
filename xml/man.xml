@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<man xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>100</code>
+		<price>0</price>
+		<content>Chat with an agent</content>
+	</service>
+	<service>
+		<code>101</code>
+		<price>5</price>
+		<content>Shoe Polishing Services</content>
+	</service>
+	<service>
+		<code>102</code>
+		<price>15</price>
+		<content>Top lift replacement</content>
+	</service>
+	<service>
+		<code>103</code>
+		<price>18</price>
+		<content>Heel replacement</content>
+	</service>
+	<service>
+		<code>104</code>
+		<price>15</price>
+		<content>Half sole replacement</content>
+	</service>
+	<service>
+		<code>105</code>
+		<price>29</price>
+		<content>Tob lift+Half sole</content>
+	</service>
+	<service>
+		<code>106</code>
+		<price>32</price>
+		<content>Half sole+Heel</content>
+	</service>
+	<service>
+		<code>107</code>
+		<price>50</price>
+		<content>Sole replacement</content>
+	</service>
+	<service>
+		<code>108</code>
+		<price>15</price>
+		<content>Shoe insert replacement</content>
+	</service>
+	<service>
+		<code>109</code>
+		<price>4</price>
+		<content>Free delivery of men socks</content>
+	</service>
+	<service>
+		<code>110</code>
+		<price>0</price>
+		<content>Free delivery of tobacco</content>
+	</service>
+	<service>
+		<code>111</code>
+		<price>0.1</price>
+		<content>Free delivery of lighter</content>
+	</service>
+</man>

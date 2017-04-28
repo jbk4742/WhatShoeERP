@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>취소요청</title>
+    <link type="text/css" rel="stylesheet" href="css/side_cancel_req.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="side_title">Goods Management</a>
+    <a href="side_sellService.html" class="side_subtitle">- View sales service</a>
+    <a href="#" class="side_title">Settlement history</a>
+    <a href="side_sellState.html" class="side_subtitle">- Sales / Settlement Status</a><!----------삭제------->
+    <a href="#" class="side_title">Sales confirmation</a>
+    <a href="side_orderList.html" class="side_subtitle">- Order Completed</a>
+    <a href="side_deliver_req.html" class="side_subtitle">- Dispatch request</a>
+    <a href="side_cancel_req.html" class="side_subtitle">- Cancellation history</a><!----------삭제------->
+    <a href="#" class="side_title">Delayed goods</a>
+    <a href="side_delay_send.html" class="side_subtitle">- Delayed Shipments</a>
+    <a href="side_not_arrive.html" class="side_subtitle">- No arrival</a>
+    <a class="side_title">CS center</a>
+    <div class="sidenav-icon">e-mail</div>
+    <div class="sidenav-icon">kakao</div>
+    <div class="sidenav-icon">call</div>
+</div>
+<div id="cancel_req">
+    <div id="cancel_req_head">
+        <img id="main_img" src="images/main_title.png" style="width: 100px; height: 50px"/>
+    </div>
+    <div id="cancel_req_body">
+        <div class="cancel_req_row">
+            <h2>Cancellation history</h2>
+        </div>
+        <div class="cancel_req_row">
+            <table id="cancel_req_list">
+                <tr>
+                    <td>Cancellation sum counts : <span id="today_cancel">00건</span></td></tr>
+            </table>
+        </div>
+        <div class="cancel_req_row">
+            <table id="cancel_req_date" style="margin-top: 30px" border="1" style="border-collapse: collapse" bordercolor="#000000">
+                <tr style="height: 50px"><td  style="width: 100px; text-align: center"><label>Search field</label></td>
+                    <td>
+                        <select id="cancel_req_search" style="width: 150px">
+                            <option value="">not select</option>
+                            <option value="id">ID</option>
+                            <option value="order_address">address</option>
+                            <option value="order_phone">phone</option>
+                            <option value="_whatshoeman">whatshoeman</option>
+                        </select>
+                        <input id="cancel_req_text" type="text"></td>
+                    <td rowspan="2">
+                        <div id="cancel_req_search_btn" style="width: 150px; height: 30px; text-align: center; margin-bottom: 5px;background-color: black; color: white; margin: auto; margin-bottom: 10px">Search</div>
+                        <div id="cancel_req_first_btn" style="width: 150px; height: 30px; text-align: center; margin-bottom: 5px;background-color: white; color: black; border: 1px solid #000; margin: auto;">Reset</div>
+                    </td></tr>
+
+                <tr style="height: 50px"><td  style="width: 100px; text-align: center"><label>기간</label></td>
+                    <td><select id="cancel_req_dateList" style="width: 150px">
+                        <option value="">not select</option>
+                        <option value="order_time">ORDER</option>
+                        <option value="book">BOOK</option>
+                    </select>
+
+                        <input id="cancel_date_value1" type="30">~<input id="cancel_date_value2" type="30">
+                    </td></tr>
+            </table>
+        </div>
+        <div class="cancel_req_row">
+            <table id="cancel_req_table" border="1" style="border-collapse: collapse" bordercolor="#000000">
+                <thead>
+                <tr><th>NUM</th>
+                    <th>ID</th>
+                    <th>SERVICE</th>
+                    <th>ADDRESS</th>
+                    <th>STATE</th>
+                    <th>MANAGER</th>
+                    <th>PHONE</th>
+                    <th>BOOK</th>
+                    <th>PAYMENT</th>
+                    <th>MEMO</th>
+                    <th>ORDER_TIME</th></tr>
+                </thead>
+                <tbody id="cancel_req_table_body">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="cancel_req_row">
+            <div id="cancel_page" style="text-align: center"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/side_cancelReq.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/order_Info.js"></script>
+<script type="text/javascript" src="js/xmlParse.js"></script>
+</body>
+</html>

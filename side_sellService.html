@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View sales service</title>
+    <link type="text/css" rel="stylesheet" href="css/side_sellService.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="side_title">Goods Management</a>
+    <a href="side_sellService.html" class="side_subtitle">- View sales service</a>
+    <a href="#" class="side_title">Settlement history</a>
+    <a href="side_sellState.html" class="side_subtitle">- Sales / Settlement Status</a><!----------삭제------->
+    <a href="#" class="side_title">Sales confirmation</a>
+    <a href="side_orderList.html" class="side_subtitle">- Order Completed</a>
+    <a href="side_deliver_req.html" class="side_subtitle">- Dispatch request</a>
+    <a href="side_cancel_req.html" class="side_subtitle">- Cancellation history</a><!----------삭제------->
+    <a href="#" class="side_title">Delayed goods</a>
+    <a href="side_delay_send.html" class="side_subtitle">- Delayed Shipments</a>
+    <a href="side_not_arrive.html" class="side_subtitle">- No arrival</a>
+    <a class="side_title">CS center</a>
+    <div class="sidenav-icon">e-mail</div>
+    <div class="sidenav-icon">kakao</div>
+    <div class="sidenav-icon">call</div>
+</div>
+
+<div id="sellService">
+    <div id="sellService_head">
+        <img id="main_img" src="images/main_title.png" style="width: 100px; height: 50px"/>
+    </div>
+    <div class="sellService_body">
+        <div class="sellService_row">
+            <span><h2>View sales service</h2></span>
+        </div>
+        <div class="sellService_row">
+            <div id="service_sublist">
+                <div id="service_sublist_row1">
+                    <label>Service Name</label>
+                    <input id="sellService_service" type="text">
+                    <label style="margin-left: 200px">Service Number</label>
+                    <input id="sellService_num" type="text">
+                </div>
+                <div id="service_sublist_row2">
+                    <label>Category</label>
+                    <select id="sellService_category">
+                        <option value=""></option>
+                        <option value="man">man</option>
+                        <option value="woman">woman</option>
+                        <option value="preman">preman</option>
+                        <option value="prewoman">prewoman</option>
+                        <option value="bag">bag</option>
+                        <option value="belt">belt</option>
+                        <option value="wallet">wallet</option>
+                    </select>
+                    <div id="sellService_search" style="margin-left: 210px">Search</div>
+                    <div id="sellService_first" style="margin-left: 20px">Reset</div>
+                </div>
+            </div>
+        </div>
+        <div class="sellService_row">
+            <span><h2>Service list</h2></span>
+        </div>
+        <div class="sellService_row">
+            <table id="sell_service_list" border="1" style="border-collapse: collapse" bordercolor="#000000">
+                <thead>
+                    <tr><th>Division</th>
+                    <th>Service Number</th>
+                    <th>Service Name</th>
+                    <th>Service Price ( $ )</th>
+                    <th>Category</th>
+                </thead>
+                <tbody id="sellService_list_body" style="text-align: center">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/xmlParse.js"></script>
+<script type="text/javascript" src="js/side_sellService.js"></script>
+</body>
+</html>

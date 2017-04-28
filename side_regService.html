@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>서비스 등록</title>
+    <link type="text/css" rel="stylesheet" href="css/side_regService.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="side_title">상품관리</a>
+    <a href="side_sellService.html" class="side_subtitle">- 판매 서비스 조회/수정</a>
+    <a href="#" class="side_title">정산내역</a>
+    <a href="side_sellState.html" class="side_subtitle">- 판매/정산 현황</a><!----------삭제------->
+    <a href="#" class="side_title">판매확인</a>
+    <a href="side_orderList.html" class="side_subtitle">- 주문완료</a>
+    <a href="side_deliver_req.html" class="side_subtitle">- 발송요청</a>
+    <a href="side_cancel_req.html" class="side_subtitle">- 취소내역</a><!----------삭제------->
+    <a href="#" class="side_title">지연상품</a>
+    <a href="side_delay_send.html" class="side_subtitle">- 발송지연</a>
+    <a href="side_not_arrive.html" class="side_subtitle">- 미도착</a>
+    <a class="side_title">CS center</a>
+    <div class="sidenav-icon">e-mail</div>
+    <div class="sidenav-icon">kakao</div>
+    <div class="sidenav-icon">call</div>
+</div>
+<div id="regService">
+    <div id="regService_head">
+        <img id="main_img" src="images/main_title.png" style="width: 100px; height: 50px"/>
+    </div>
+    <div class="regService_body">
+        <div class="regService_row">
+            <h2>서비스 등록</h2>
+        </div>
+        <div class="regService_row">
+            <h3>판매처 등록</h3>
+        </div>
+        <div class="regService_row">
+            <table id="reg_seller">
+                <tr id="reg_seller_row1"><td style="width: 100px;"><label>판매처</label></td>
+                    <td><input id="reg_seller_namne" type="text" style="width: 300px"></td></tr>
+                <tr id="reg_seller_row2"><td style="width: 100px;"><label>주소</label></td>
+                <td><input id="reg_seller_addr" type="text" style="width: 1000px"></td></tr>
+                <tr id="reg_seller_row3"><td style="width: 100px;"><label>서비스 문의</label></td>
+                <td><input id="reg_seller_wonder" type="text" style="width: 600px; "></td></tr>
+            </table>
+        </div>
+        <div class="regService_row">
+            <h3>서비스 등록</h3>
+        </div>
+        <div class="regService_row">
+            <table id="reg_service">
+                <tr><td style="width: 100px;"><label>서비스명</label></td>
+                    <td><input id="reg_service_namne" type="text" style="width: 300px"></td>
+                    <td rowspan="3"><label style="width: 100px;">이미지 등록</label></td>
+                    <td rowspan="3">이미지 등록</td></tr>
+                <tr><td style="width: 100px;"><label>가격</label></td>
+                    <td><input id="reg_service_price" type="text" style="width: 300px"></td></tr>
+                <tr><td style="width: 100px;"><label>카테고리</label></td>
+                    <td><input id="reg_service_category" type="text" style="width: 300px; "></td></tr>
+            </table>
+        </div>
+        <div class="regService_row">
+            <h3>상세설명</h3>
+        </div>
+        <div class="regService_row">
+            <table id="more_info">
+                <tr><td style="width: 100px;"><label>서비스<br>설명이미지</label></td></tr>
+            </table>
+        </div>
+        <div class="regService_row">
+            <div id="register_btn">등록</div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

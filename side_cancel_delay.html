@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>취소요청</title>
+    <link type="text/css" rel="stylesheet" href="css/side_cancel_delay.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="side_title">상품관리</a>
+    <a href="side_sellService.html" class="side_subtitle">- 판매 서비스 조회/수정</a>
+    <a href="#" class="side_title">정산내역</a>
+    <a href="side_sellState.html" class="side_subtitle">- 판매/정산 현황</a><!----------삭제------->
+    <a href="#" class="side_title">판매확인</a>
+    <a href="side_orderList.html" class="side_subtitle">- 주문완료</a>
+    <a href="side_deliver_req.html" class="side_subtitle">- 발송요청</a>
+    <a href="side_cancel_req.html" class="side_subtitle">- 취소내역</a><!----------삭제------->
+    <a href="#" class="side_title">지연상품</a>
+    <a href="side_delay_send.html" class="side_subtitle">- 발송지연</a>
+    <a href="side_not_arrive.html" class="side_subtitle">- 미도착</a>
+    <a class="side_title">CS center</a>
+    <div class="sidenav-icon">e-mail</div>
+    <div class="sidenav-icon">kakao</div>
+    <div class="sidenav-icon">call</div>
+</div>
+<div id="cancel_delay">
+    <div id="cancel_delay_head">
+        <img id="main_img" src="images/main_title.png" style="width: 100px; height: 50px"/>
+    </div>
+    <div id="cancel_delay_body">
+        <div class="cancel_delay_row">
+            <h2>취소지연</h2>
+        </div>
+        <div class="cancel_delay_row">
+            <table id="cancel_delay_list">
+                <tr><td>오늘 취소 건수 : 00건</td>
+                <td>영업일 1일 후 자동취소 : 00건</td>
+                <td>누적 취소 건수 : 00건</td></tr>
+            </table>
+        </div>
+        <div class="cancel_delay_row">
+            <table id="cancel_delay_date" >
+                <tr><td  style="width: 100px;"><label>검색구분</label></td>
+                <td><select id="cancel_req_search" style="width: 150px">
+                    <option value="전체">전체</option>
+                    <option value="주문완료">주문완료</option>
+                    <option value="결재완료">결제완료</option>
+                    <option value="배송중">배송중</option>
+                    <option value="배송완료">배송완료</option>
+                </select>
+                <input id="cancel_delay_text" type="text">
+                <input type="checkbox" id="cancel_delay_order_find"> <label>마켓별 주문 조회</label> </td>
+                <td rowspan="3">취소상태</td>
+                <td rowspan="3"><select id="cancel_delay_state" style="width: 150px">
+                    <option value="전체">전체</option>
+                    <option value="주문완료">주문완료</option>
+                    <option value="결재완료">결제완료</option>
+                    <option value="배송중">배송중</option>
+                    <option value="배송완료">배송완료</option>
+                </select></td>
+                <td rowspan="3">
+                    <div id="cancel_delay_search_btn" style="width: 150px; height: 30px; text-align: center; margin-bottom: 5px;background-color: black; color: white">검색</div>
+                    <div id="cancel_delay_first_btn" style="width: 150px; height: 30px; text-align: center; margin-bottom: 5px;background-color: white; color: black; border: 1px solid #000">초기화</div>
+                </td></tr>
+                <tr><td style="width: 100px;"><label>기간</label></td>
+                <td ><select id="cancel_delay_dateList" style="width: 150px">
+                    <option value="전체">전체</option>
+                    <option value="주문완료">주문완료</option>
+                    <option value="결재완료">결제완료</option>
+                    <option value="배송중">배송중</option>
+                    <option value="배송완료">배송완료</option>
+                </select></td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: white;
+}
+
+#main_img{
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    border: 2px solid #000;
+}
+
+.sidenav a {
+    padding: 5px 1px 15px 32px;
+    text-decoration: none;
+
+    color: #252525;
+    display: block;
+    transition: 0.3s;
+}
+
+.side_subtitle{
+    font-size: 15px;
+    margin-left: 15px ;
+}
+
+.side_title{
+    font-size: 25px;
+}
+
+.sidenav-icon{
+    margin-left: 12px;
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    display: inline-block;
+    border: 1px solid #000;
+    color: #252525;
+}
+
+.sidenav a:hover, .offcanvas a:focus, .sidenav-icon:hover   {
+    color: #000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#sellService {
+    margin-left: 250px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 0px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#mySidenav{
+    width: 250px;
+}
+
+#sellService_head{
+    background-color: #000;
+    color: #f1f1f1f1;
+    height: 50px;
+    width: 100%;
+}
+
+.sellService_row{
+    margin-top: 30px;
+}
+
+.sellService_body{
+    margin-left: 20px;
+}
+
+#service_div{
+    text-align: center;
+    border: 2px solid #000;
+    width: 1200px;
+    height: 30px;
+}
+
+#service_sublist {
+    text-align: center;
+    width: 1200px;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+
+}
+
+#sellService_category, #sellService_num, #sellService_service, #sellService_status{
+    width: 250px;
+}
+
+#service_sublist_row1, #service_sublist_row2{
+    padding: 10px;
+}
+#service_sublist_row1{
+    border-bottom: 1px dotted #000;
+}
+
+#sell_service_list{
+    width: 1200px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#sellService_search{
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+    color: #FFFFFF;
+    background-color: black;
+    cursor: pointer;
+}
+#sellService_first{
+    display: inline-block;
+    color: black;
+    border : 1px solid black;
+    background-color: white;
+    height: 25px;
+    width: 150px;
+    cursor: pointer;
+}

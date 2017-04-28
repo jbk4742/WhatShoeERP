@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Completed</title>
+    <link rel="stylesheet" type="text/css" href="lib/site.css" />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/side_orderList.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+    <a href="#" class="side_title">Goods Management</a>
+    <a href="side_sellService.html" class="side_subtitle">- View sales service</a>
+    <a href="#" class="side_title">Settlement history</a>
+    <a href="side_sellState.html" class="side_subtitle">- Sales / Settlement Status</a><!----------삭제------->
+    <a href="#" class="side_title">Sales confirmation</a>
+    <a href="side_orderList.html" class="side_subtitle">- Order Completed</a>
+    <a href="side_deliver_req.html" class="side_subtitle">- Dispatch request</a>
+    <a href="side_cancel_req.html" class="side_subtitle">- Cancellation history</a><!----------삭제------->
+    <a href="#" class="side_title">Delayed goods</a>
+    <a href="side_delay_send.html" class="side_subtitle">- Delayed Shipments</a>
+    <a href="side_not_arrive.html" class="side_subtitle">- No arrival</a>
+    <a class="side_title">CS center</a>
+    <div class="sidenav-icon">e-mail</div>
+    <div class="sidenav-icon">kakao</div>
+    <div class="sidenav-icon">call</div>
+</div>
+<div id="orderList">
+    <div id="orderList_head">
+        <img id="main_img" src="images/main_title.png" style="width: 100px; height: 50px"/>
+    </div>
+    <div class="orderList_body">
+        <div class="orderList_row">
+            <h3>Sales confirmation</h3>
+        </div>
+        <div class="orderList_row">
+            <table id="order_state_table" >
+                <tr>
+                    <td><span>Pick up :</span><span id="order_state_1">0 counts</span></td>
+                    <td><span>Repairing :</span><span id="order_state_2">0 counts</span></td>
+                    <td><span>Delivery :</span><span id="order_state_3">0 counts</span></td>
+                    <td><span>Delivery completed :</span><span id="order_state_4">0 counts</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="orderList_row">
+            <table id="orderList_search" style="margin-top: 30px" border="1" style="border-collapse: collapse" bordercolor="#000000">
+                <tr style="height: 40px"><td  style="width: 100px; text-align: center"><label>Search field</label></td>
+                    <td>
+                        <select id="orderList_search_list" style="width: 150px">
+                            <option value="">not select</option>
+                            <option value="id">ID</option>
+                            <option value="order_address">address</option>
+                            <option value="order_phone">phone</option>
+                            <option value="_whatshoeman">whatshoeman</option>
+                        </select>
+                    <input id="orderList_division_text" type="text"></td>
+                <td rowspan="3">
+                    <div id="orderList_search_btn" style="width: 150px; height: 30px; text-align: center; margin-bottom: 5px;background-color: black; color: white; margin: auto; margin-bottom: 10px">Search</div>
+                    <div id="orderList_first_btn" style="width: 150px; height: 30px; text-align: center; margin-bottom: 5px;background-color: white; color: black; border: 1px solid #000; margin: auto;">Reset</div>
+                </td></tr>
+
+                <tr style="height: 40px"><td  style="width: 100px; text-align: center"><label>Date</label></td>
+                    <td><select id="orderList_date" style="width: 150px">
+                        <option value="">not select</option>
+                        <option value="order_time">ORDER</option>
+                        <option value="book">BOOK</option>
+                    </select>
+
+                    <input id="orderList_date_value1" type="30">~<input id="orderList_date_value2" type="30">
+                    </td></tr>
+
+                <tr style="height: 40px"><td  style="width: 100px; text-align: center"><label>Order Status</label></td>
+                    <td><select id="orderList_orderState" style="width: 150px">
+                        <option value="">not select</option>
+                        <option value="0">Pick up</option>
+                        <option value="1">Repairing</option>
+                        <option value="2">Delivery</option>
+                        <option value="3">Delivery completed</option>
+
+                    </select>
+                    </td></tr>
+            </table>
+        </div>
+        <div class="orderList_row">
+            <table class="orderList_table" id="orderList_table" border="1" style="border-collapse: collapse" bordercolor="#FF00FF">
+                <thead>
+                    <tr><th id="sort_num">NUM</th>
+                        <th>ID</th>
+                        <th>SERVICE</th>
+                        <th>ADDRESS</th>
+                        <th>STATE</th>
+                        <th>MANAGER</th>
+                        <th>PHONE</th>
+                        <th id="sort_book">BOOK</th>
+                        <th>PAYMENT</th>
+                        <th>MEMO</th>
+                        <th id="sort_order">ORDER_TIME</th></tr>
+                </thead>
+                <tbody id="orderList_table_body">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="orderList_row">
+            <div id="orderList_page"></div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------modal--------------->
+<div id="order_modal">
+    <div id="order_modal_body">
+        <div class="order_modal_row">
+            <label>Order Number : </label>
+            <span id="order_modal_index"></span>
+        </div>
+        <div class="order_modal_row">
+            <label>Order Status</label>
+            <select id="order_modal_state">
+                <option value=""></option>
+                <option value="0">Pick up</option>
+                <option value="1">Repairing</option>
+                <option value="2">Delivery</option>
+                <option value="3">Delivery completed</option>
+                <option value="4">Cancel</option>
+            </select>
+        </div>
+        <div class="order_modal_row">
+            <label>ID : </label>
+            <span id="order_modal_id"></span>
+            <label>/ Phone : </label>
+            <span id="order_modal_phone"></span>
+        </div>
+        <div class="order_modal_row">
+            <label>Address : </label>
+            <span id="order_modal_addr"></span>
+        </div>
+        <div class="order_modal_row">
+            <label>Order Time : </label>
+            <span id="order_modal_time"></span>
+        </div>
+        <div class="order_modal_row"></div>
+            <label>Book Time : </label>
+            <input type="text" id="order_modal_book">
+            <input type="text" id="order_modal_book_time" class="time">
+        <div class="order_modal_row">
+            <label>Service : </label>
+            <span id="order_modal_code"></span>
+        </div>
+        <div class="order_modal_row">
+            <label>Price : </label>
+            <span id="order_modal_price"></span>
+        </div>
+        <div class="order_modal_row">
+            <label>Payment : </label>
+            <sapn id="order_modal_pay"></sapn>
+        </div>
+        <div class="order_modal_row">
+            <label>Manager : </label>
+            <input id="order_modal_admin" type="text"/>
+        </div>
+        <div class="order_modal_row">
+            <label>Etc : </label>
+            <span id="order_modal_etc"></span>
+        </div>
+        <div class="order_modal_row">
+            <label>Memo</label>
+            <textarea id="order_modal_memo" cols="30" rows="10"></textarea>
+        </div>
+        <div class="order_modal_row">
+            <label>Delivery company : </label>
+            <span id="order_modal_carry" type="text"></span>
+        </div>
+        <div class="order_modal_row">
+            <label>Delivery Number : </label>
+            <span id="order_modal_deliver" type="text"></span>
+        </div>
+    </div>
+        <div style="text-align: center">
+            <div id="order_modal_save">Save</div>
+            <div id="order_modal_close">Close</div>
+        </div>
+
+
+</div>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/xmlParse.js"></script>
+<script type="text/javascript" src="js/order_Info.js"></script>
+<script type="text/javascript" src="js/side_OrderList.js"></script>
+<script type="text/javascript" src="js/jquery.timepicker.js"></script>
+<script type="text/javascript" src="js/jquery.timepicker.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<belt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<service>
+		<code>600</code>
+		<price>0</price>
+		<content>Chat with an agent</content>
+	</service>
+	<service>
+		<code>601</code>
+		<price>100</price>
+		<content>new belt strap</content>
+	</service>
+	<service>
+		<code>602</code>
+		<price>20</price>
+		<content>new belt buckles</content>
+	</service>
+	<service>
+		<code>603</code>
+		<price>30</price>
+		<content>belt buckles polish(M)</content>
+	</service>
+	<service>
+		<code>604</code>
+		<price>55</price>
+		<content>belt buckles polish(L)</content>
+	</service>
+	<service>
+		<code>605</code>
+		<price>120</price>
+		<content>belt buckles polish(etc.)</content>
+	</service>
+	<service>
+		<code>606</code>
+		<price>55</price>
+		<content>stitching, refinishing belt</content>
+	</service>
+</belt>
